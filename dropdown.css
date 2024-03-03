@@ -6,7 +6,7 @@
     margin: 10px 1px;
     box-shadow: 2px 2px 6px #000000aa;
     border-radius: 5px;
-    background-image: linear-gradient(to bottom, #64646454, #5e5e5e40, #00000000);
+    background-image: linear-gradient(to bottom, var(--button-gradient-color1), var(--button-gradient-color2), #00000000);
     cursor: pointer;
     display: inline-flex;
 }
@@ -14,6 +14,7 @@
 .dropdown-content {
     display: none;
     margin-left: 20px;
+    margin-right: 20px;
     margin-top: 10px;
 }
 
@@ -31,6 +32,16 @@
     transform: rotate(-90deg);
 }
 
+.dropdown-arrow.arrow-last {
+    transform: rotate(90deg);
+    margin-left: 0.3rem;
+    margin-right: 0;
+}
+
+
 .dropdown-arrow.rotated {
     transform: rotate(-180deg);
+}
+.dropdown-arrow.arrow-last.dropdown-arrow.rotated {
+    transform: rotate(180deg);
 }
